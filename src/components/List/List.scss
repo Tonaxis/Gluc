@@ -1,0 +1,19 @@
+@import '../../assets/css/variables.scss';
+
+.list-container {
+    margin-top: 5px;
+    width: calc(60% + 30px);
+    align-self: center;
+    justify-self: center;
+    overflow-y: auto;
+
+    .list {
+        background-color: $background-light;
+        padding: 15px 0 15px 0;
+        border-radius: 5px;
+    }
+
+    @media (max-width: 500px) {
+        width: calc(85% + 30px);
+    }
+}

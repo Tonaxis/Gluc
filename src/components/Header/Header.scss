@@ -1,0 +1,27 @@
+@import '../../assets/css/variables.scss';
+
+.title {
+  margin: 20px 0 10px;
+  padding: 20px;
+  background-color: $background-light;
+
+  div {
+    display: flex;
+    justify-content: center;
+    transform: translateX(-40px);
+  }
+  
+  img {
+    image-rendering: pixelated;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+
+  h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: $primary-color;
+    text-shadow: $primary-color 0 0 1px, $primary-color 0 0 5px;
+  }
+}

@@ -1,0 +1,88 @@
+@import '../../assets/css/variables.scss';
+
+.product {
+    position: relative;
+    padding: 5px 15px 5px 15px;
+    display: flex;
+    cursor: pointer;
+
+    * {
+        z-index: 1;
+    }
+
+    p {
+        margin: 0;
+
+        &.product_brands {
+            font-size: small;
+            font-weight: bold;
+            font-style: italic;
+            margin-left: 10px;
+        }
+
+        &.product_generic {
+            color: $muted-text-color;
+            font-style: italic;
+        }
+
+        &.product_glucides {
+            color: $primary-color;
+            align-self: center;
+            margin-left: auto;
+        }
+    }
+
+    img {
+        width: 35px;
+        height: 35px;
+        object-fit: cover;
+        margin-right: 15px;
+        align-self: center;
+    }
+
+    &:hover {
+        p {
+            color: $primary-color;
+        }
+
+        &::before {
+            opacity: 1;
+        }
+    }
+
+    &:nth-child(odd) {
+        background-color: $background-mid;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $hover-color;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .product_info .product_title {
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+@media (max-width: 500px) {
+    .product .product_info .product_title {
+        flex-direction: column;
+    }
+
+    .product p.product_brands {
+        margin-left: 0;
+        align-self: start;
+    }
+
+    .product p.product_name {
+        align-self: start;
+    }
+}

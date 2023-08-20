@@ -1,0 +1,41 @@
+@import '../../assets/css/variables.scss';
+
+.sticky {
+    position: sticky;
+    top: 5px;
+    align-self: center;
+    justify-self: center;
+    width: 60%;
+    z-index: 5;
+    transform: translateX(-15px);
+
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: -6px;
+        width: calc(100% + 30px);
+        height: calc(100% + 30px);
+        background: $sticky-background;
+    }
+
+    @media (max-width: 500px) {
+        width: 85%;
+    }
+}
+
+.header {
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    margin-top: 10px;
+    background-color: $background-light;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 0 15px;
+
+    .glucides {
+        color: $primary-color;
+    }
+}

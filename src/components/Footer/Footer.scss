@@ -1,0 +1,16 @@
+@import '../../assets/css/variables.scss';
+
+footer {
+  padding: 50px;
+  background-color: $background-light;
+  margin: 10px 0 20px;
+
+  a {
+    text-decoration: none;
+    color: $primary-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,140 @@
+@import '../../assets/css/variables.scss';
+
+.background-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: #22222288;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .popup {
+        position: relative;
+        height: fit-content;
+        max-height: 90vh;
+        max-width: 90vw;
+        z-index: 10;
+        background-color: $background-mid;
+        padding: 25px;
+        border-radius: 5px;
+        overflow-y: auto;
+
+        table {
+            width: 100%;
+
+            th {
+                background-color: $background-light;
+                outline: solid 2px $border-color;
+            }
+
+            tr {
+                &:hover {
+                    background-color: $hover-color;
+
+                    td.name {
+                        color: $primary-color;
+                    }
+                }
+
+                td {
+                    outline: solid 2px $border-color;
+                }
+            }
+        }
+
+        details {
+            margin: 5px;
+
+            summary {
+                padding: 5px;
+                border: solid 2px $border-color;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $hover-color;
+                }
+            }
+
+            &[open] summary {
+                background-color: $hover-color;
+                color: $primary-color;
+            }
+        }
+
+        .close {
+            position: absolute;
+            padding: 0;
+            right: 10px;
+            top: 5px;
+            border: none;
+            background-color: transparent;
+            font-size: larger;
+            cursor: pointer;
+            color: $text-color;
+            transition: color 0.4s;
+
+            &:hover {
+                color: red;
+            }
+        }
+
+        &_header {
+            display: flex;
+
+            img {
+                width: 100px;
+                height: 150px;
+                object-fit: contain;
+            }
+
+            .titles {
+                margin-left: 10px;
+
+                .generic-name {
+                    color: $muted-text-color;
+                    font-style: italic;
+                }
+
+                .brands {
+                    font-size: small;
+                    font-weight: bold;
+                    font-style: italic;
+                }
+            }
+        }
+
+        .nutriscore {
+            margin: 10px 0;
+            padding: 5px;
+            border: solid 2px $border-color;
+            border-radius: 5px;
+            font-style: italic;
+
+            span {
+                text-transform: capitalize;
+                font-style: italic;
+                font-weight: bolder;
+            }
+
+            &-a {background-color: map-get($nutriscore-colors, a);}
+            &-b {background-color: map-get($nutriscore-colors, b);}
+            &-c {background-color: map-get($nutriscore-colors, c);}
+            &-d {background-color: map-get($nutriscore-colors, d);}
+            &-e {background-color: map-get($nutriscore-colors, e);}
+        }
+
+        .warning {
+            margin: 10px 0;
+            padding: 5px;
+            border: solid 2px red;
+            border-radius: 5px;
+            font-style: italic;
+            color: red;
+        }
+    }
+}
