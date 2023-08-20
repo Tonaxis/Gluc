@@ -62,7 +62,7 @@ npm install
 npm start
 ```
 
-2. Ouvrez votre navigateur et accédez à l'URL suivante :
+2. Ouvrez votre navigateur et accédez à l'[URL suivante](http://localhost:3000) :
 
 ```bash
 http://localhost:3000
@@ -85,7 +85,7 @@ npm run build
 serve -s build
 ```
 
-3. Ouvrez votre navigateur et accédez à l'URL suivante :
+3. Ouvrez votre navigateur et accédez à l'[URL suivante](http://localhost:3000) :
 
 ```bash
 http://localhost:3000
