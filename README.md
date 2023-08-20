@@ -8,6 +8,8 @@ L'objectif principale de cette application est de rapidement pouvoir voir la qua
 
 Cette application React, récupére les données de l'API Open Food Facts pour lister les produits alimentaires et afficher la quantité de glucides pour chaque produit. C'est une manière pratique de visualiser les informations nutritionnelles des produits.
 
+**Application web disponible [ici](https://gluc.tonaxis.fr/)**
+
 ## Sommaire
 
 - [Fonctionnalités](#fonctionnalités)
