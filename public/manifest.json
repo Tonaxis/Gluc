@@ -1,21 +1,21 @@
 {
-    "name": "Gluc",
-    "short_name": "Gluc",
-    "description": "Vérifiez les glucides de vos produits !",
-    "icons": [
-      {
-        "src": "Gluc.png",
-        "sizes": "192x192",
-        "type": "image/png"
-      },
-      {
-        "src": "Gluc.png",
-        "sizes": "512x512",
-        "type": "image/png"
-      }
-    ],
-    "start_url": "/",
-    "display": "standalone",
-    "theme_color": "#6db33f",
-    "background_color": "#222"
-  }
+  "name": "Gluc",
+  "short_name": "Gluc",
+  "description": "Vérifiez les glucides de vos produits !",
+  "icons": [
+    {
+      "src": "gluc-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "gluc-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#6db33f",
+  "background_color": "#222"
+}
